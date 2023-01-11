@@ -244,6 +244,107 @@
 
 // console.log(string);
 
+//  Замінити регістр кожного символа на протилежний
+
+// const string = 'JavaScript';
+// const letters = string.split('');
+// let invertedString = '';
+
+// console.log(letters);
+
+// for (const letter of letters) {
+//     console.log(letter);
+
+//     if (letter === letter.toLowerCase()) {
+// console.log('Ця буква в нижньому регистрі - ', letter);
+
+//     invertedString += letter.toUpperCase();
+//     } else {
+//         console.log('Ця буква в верхньому регистрі - ', letter);
+//     invertedString += letter.toLowerCase();  
+//     }
+// }
+
+// console.log(invertedString);
+
+// Veriant 2
+// const string = 'JavaScript';
+// const letters = string.split('');
+// let invertedString = '';
+
+// console.log(letters);
+
+// for (const letter of letters) {
+//     console.log(letter);
+
+//     invertedString += 
+//     letter === letter.toLowerCase()
+//     ? letter.toUpperCase()
+//     : letter.toLowerCase();
+
+// }
+
+// console.log(invertedString);
+
+// Робимо slug в URL з назви статті,
+//  заголовок складається з літер та пробілів
+// нормалізуємо строку
+// робимо розбивку по словам
+//  зшиваємо в сроку з розділювачем
+//  має вийти top-10-benefits-of-react-framework
+
+// const title = 'Top 10 benefits of React framework';
+
+// const normalizedTitle = toLowerCase();
+
+// const words = normalizedTitle.split(' ');
+// console.log(words);
+
+// const slug = words.join('-');
+// console.log(slug);
+
+// чейнінг - ланцюжок викликів
+// const slug1 = title.toLowerCase().split(' ').join('-');
+// console.log(slug1);
+
+// Напиши скрипт, який рахує суму елементів двох масивів
+
+// const array1 = [5, 10, 15, 20];
+// const array2 = [10, 20, 30];
+// let total = 0;
+
+// const numbers = array1.concat(array2);
+
+// for (const number of numbers) {
+//     total += number; 
+// }
+// console.log(total);
+
+// Метод splice
+
+const cards = [
+    'Card-1',
+    'Card-2',
+    'Card-3',
+    'Card-4',
+    'Card-5'
+];
+console.table(cards);
+// Удаление по индексу
+// const cardToRemove = 'Card-3';
+// const index = cards.indexOf(cardToRemove);
+// console.log(index);
+// cards.splice(index, 1);
+
+// console.log(cards);
+
+// Добавление по индексу
+const cardToInsert = 'Card-6';
+const index = 3;
+
+cards.splice(1,0,5,10,20);
+console.table(cards);
+
 
 
 
