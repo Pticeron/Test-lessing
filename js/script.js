@@ -322,14 +322,14 @@
 
 // Метод splice
 
-const cards = [
-    'Card-1',
-    'Card-2',
-    'Card-3',
-    'Card-4',
-    'Card-5'
-];
-console.table(cards);
+// const cards = [
+//     'Card-1',
+//     'Card-2',
+//     'Card-3',
+//     'Card-4',
+//     'Card-5'
+// ];
+// console.table(cards);
 // Удаление по индексу
 // const cardToRemove = 'Card-3';
 // const index = cards.indexOf(cardToRemove);
@@ -339,15 +339,38 @@ console.table(cards);
 // console.log(cards);
 
 // Добавление по индексу
-const cardToInsert = 'Card-6';
-const index = 3;
+// const cardToInsert = 'Card-6';
+// const index = 3;
 
-cards.splice(1,0,5,10,20);
-console.table(cards);
+// cards.splice(1,0,5,10,20);
+// console.table(cards);
+
+// перебір масив value 
+
+// const values = "8 11";
+// const arrey = values.split(' ');
+// const width = Number(arrey[0]);
+// const height = Number(arrey[1]);
+// const rectSquare = width * height;
+// console.log(rectSquare);
+
+// Оновлення по індексу
+
+// const cardToUpdate = 'Card-4';
+
+// const index = cards.indexOf(cardToUpdate);
+
+// console.log(index);
+
+// cards.splice(index, 1, "New-Card-4");
+// console.table(cards);
 
 
+const card = [54, 28, 105, 70, 92, 17, 120, 12, 25, 90] 
+let total = 0;
 
+for (const value of card) {
+    total += value;
+}
 
-
-
-
+console.log("Total:", total);
