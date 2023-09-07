@@ -1,3 +1,5 @@
+console.log(Number(null));
+
 // const apples = 47;
 // const grapes = 136;
 // const total = apples + grapes;
